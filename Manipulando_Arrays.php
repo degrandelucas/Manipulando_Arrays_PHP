@@ -18,13 +18,14 @@ echo "Informações separadas (Array do Texto): " . implode(", ", $arrayTexto) .
 
 // ---------------------------------------------------------------------------------
 
-$array = ["Lucas", "Degrande", "Danyelle", "Pereira", "Silva", "Degrande"];
-
-function ordenaArray($array) {
+function ordenaArray(array $array): array {
     sort($array);
     return $array;
 }
 
+$array = ["Lucas", "Degrande", "Danyelle", "Pereira", "Silva", "Degrande"];
+
 $arrayOrdenado = ordenaArray($array);
 
-echo "Array ordenado: " . implode(", ", $arrayOrdenado) . "\n";
+echo "Array ordenado: ";
+print_r($arrayOrdenado);
